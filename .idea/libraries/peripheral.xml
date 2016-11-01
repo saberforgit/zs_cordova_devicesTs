@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="peripheral">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/peripheral.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

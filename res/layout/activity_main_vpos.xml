@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/IdCardBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读二代证" />
+    <Button 
+        android:id="@+id/getBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ICCardInfo"/>
+    
+    <Button 
+        android:id="@+id/getmscBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="磁条卡"/>
+
+</LinearLayout>

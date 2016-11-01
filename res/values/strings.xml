@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">HelloCordova</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="prompt">提示信息</string>
+    <string name="confirm">确定</string>
+    <string name="readidfailure">读卡操作失败，请检查设备，查看设备连接是否正确</string>
+    <string name="putpassing">密码输入中，请耐心等待</string>
+    <string name="notcardnumber">请先获取卡号，再输入密码</string>
+    <string name="getcardinfo">请在指定区域进行刷卡操作，完成后再点击确定按钮</string>
+    <string name="openfailure">打开磁条设备失败</string>
+    <string name="putidcard">请将身份证放置于指定区域</string>
+</resources>
