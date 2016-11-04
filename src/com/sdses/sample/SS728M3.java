@@ -145,9 +145,6 @@ public class SS728M3 extends CordovaPlugin {
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         mCallBack = callbackContext;
         switch (action) {
-            case "initBluetooth":
-                SdsesBacnCard.initApp(mContext);
-                break;
             case "readIDCard":
                 if (!getBluetoothStatus()) {
                     Message msg = handler.obtainMessage(-113);
@@ -186,7 +183,7 @@ public class SS728M3 extends CordovaPlugin {
                 }
                 try {
                     ICCard.readICCardNum(handler);
-                }catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
                 break;
@@ -230,6 +227,7 @@ public class SS728M3 extends CordovaPlugin {
 
         return true;
     }
+
 
     protected static int initM3Client(Activity mContext) {
         mComShell = SdsesBacnCard.getComShell(mContext);

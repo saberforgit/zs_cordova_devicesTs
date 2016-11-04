@@ -11,10 +11,10 @@
     <div id="deviceready" class="blink">
         <p class="event listening">Connecting to Device</p>
         <p class="event received">Device is Ready</p>
-        <img id="myImage" style="width:612px;height:816px">
-        <img id="resImage" style="width:612px;height:816px">
-        <button onclick="initBluetooth()" style="width:50%;height:40px;magin:10px">initBluetooth
-        </button>
+        <!--<img id="myImage" style="width:612px;height:816px">-->
+        <!--<img id="resImage" style="width:612px;height:816px">-->
+        <!--<button onclick="initBluetooth()" style="width:50%;height:40px;magin:10px">initBluetooth-->
+        <!--</button>-->
         <button onclick="readCard()" style="width:50%;height:40px;magin:10px">readCard</button>
         <button onclick="initMagClient()" style="width:50%;height:40px;magin:10px">initMagClient
         </button>
@@ -25,11 +25,27 @@
         <button onclick="upload()" style="width:50%;height:40px;magin:10px">UpLoad</button>
         <button onclick="getWaterMark()" style="width:50%;height:40px;magin:10px">Take photo
         </button>
+        <button onclick="showKeyBoard()" style="width:50%;height:40px;magin:20px">Show KeyBoard
+        </button>
 
 
     </div>
 </div>
 <script>
+
+        var showKeyBoard = function(){
+
+        cordova.plugins.keyboard.showKeyBoard(
+                function(res){
+        alert(JSON.stringify(res));
+        },
+        function(err){
+        alert(JSON.stringify(err));
+        },
+        {type:"full"}
+        );
+        }
+
         var upload = function(){
           navigator.camera.getPicture(function(res){
           uploadPic(res);

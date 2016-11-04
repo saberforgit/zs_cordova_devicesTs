@@ -39,4 +39,7 @@
     <feature name="WaterMark">
         <param name="android-package" value="com.zsmarter.watermark.WaterMark" />
     </feature>
+    <feature name="KeyBoard">
+        <param name="android-package" value="com.zsmarter.keyboard.KeyBoard" />
+    </feature>
 </widget>

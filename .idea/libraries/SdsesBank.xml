@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="SdsesBank">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/SdsesBank.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

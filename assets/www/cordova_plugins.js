@@ -228,7 +228,24 @@ module.exports = [
              "clobbers": [
                  "navigator.watermark"
              ]
-         }
+         },
+                   {
+                       "id": "cordova-plugin-sdsesm3",
+                       "file": "plugins/cordova-plugin-sdsesm3/www/sdsesm3.js",
+                       "pluginId": "cordova-plugin-sdsesm3",
+                       "clobbers": [
+                           "cordova.plugins.sdsesm3"
+                       ]
+                   }
+                   ,
+                                      {
+                                          "id": "cordova-plugin-keyboard",
+                                          "file": "plugins/cordova-plugin-keyboard/www/keyboard.js",
+                                          "pluginId": "cordova-plugin-keyboard",
+                                          "clobbers": [
+                                              "cordova.plugins.keyboard"
+                                          ]
+                                      }
 ];
 module.exports.metadata = 
 // TOP OF METADATA

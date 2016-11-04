@@ -22,8 +22,8 @@ public class SdsesBacnCard {
 	public static void initApp(Activity mContext) {
 		try {
 			mComShell = new ComShell(mContext.getApplicationContext(),"",mhandler);
-			mPrinterShell = new PrinterShell(mContext.getApplicationContext(),"Qsp",mhandler);
-			myRegisterReceiver(mContext);
+//			mPrinterShell = new PrinterShell(mContext.getApplicationContext(),"Qsp",mhandler);
+//			myRegisterReceiver(mContext);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

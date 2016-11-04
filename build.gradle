@@ -249,6 +249,8 @@ dependencies {
     // SUB-PROJECT DEPENDENCIES START
     debugCompile project(path: "CordovaLib", configuration: "debug")
     releaseCompile project(path: "CordovaLib", configuration: "release")
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:percent:24.0.0'
     // SUB-PROJECT DEPENDENCIES END
 }
 
